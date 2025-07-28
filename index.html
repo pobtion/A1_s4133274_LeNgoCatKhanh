@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dance of Petals & Promises</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&family=IM+Fell+DW+Pica:ital@0;1&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body>
+    <!-- bgm -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="audio/Elysian Realm - HOYO-MiX.mp3" type="audio/mpeg">
+        <source src="audio/Elysian Realm - HOYO-MiX.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- bgm control button -->
+    <button id="audioToggle" class="audio-control" aria-label="Toggle background music">
+        <i class="fas fa-volume-up" id="audioIcon"></i>
+    </button>
+
+    <div class="wrapper">
+        <div class="content">
+            <section class="sticky-cards">
+                <div class="card">
+                    <div class="card-img"><img class="deck" src="img/cards - export-01.png" alt=""></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img class="deck" src="img/cards - export-02.png" alt=""></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img class="deck" src="img/cards - export-03.png" alt=""></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img class="deck" src="img/cards - export-04.png" alt=""></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img class="deck" src="img/cards - export-05.png" alt=""></div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img class="deck" src="img/cards - export-06.png" alt=""></div>
+                </div>
+                <!-- hearts scattered - cards section -->
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-1">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-2">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-3">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-4">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-12">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-13">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-14">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-15">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-16">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-17">
+                <!-- additional center hearts - cards section -->
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-23">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-24">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-25">
+                <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-26">
+            </section>
+        </div>
+        <div class="image-container">
+            <img class="landing" src="img/zoomtest-cut-01.png" alt="Image">
+        </div>
+    </div>
+    <section class="section sticky-scroll">
+        <div class="content-second">
+            <div class="section-inner">
+                <div class="section-wrapp">
+                    <div class="section-item">The Banquet Hall, her chosen stage,</div>
+                    <div class="section-item">To turn the final, fatal page.</div>
+                    <div class="section-item">With gentle hands and steady gaze,</div>
+                    <div class="section-item">She lit the torch through murky haze</div>
+                    <div class="section-item">Her comrades wept, the weight immense,</div>
+                    <div class="section-item">As she dissolved in radiance –</div>
+                    <div class="section-item">A crystal shard, a memory’s tear,</div>
+                    <div class="section-item">The price of hope, dispelling fear.</div>
+                    <!-- Additional scattered hearts for this section -->
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-5">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-6">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-7">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-18">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-19">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-20">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-21">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-22">
+                    <!-- Additional center hearts for text section -->
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-27">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-28">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-29">
+                    <img src="bg/heart (5; 0)-01.png" alt="" class="scattered-heart heart-30">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="letter" class="last full-screen">
+        <div class="container">
+            <!-- background bokeh effect -->
+            <div class="particles-container"></div>
+            <div class="scene">
+                <div class="envelope-wrapper">
+                    <div class="envelope">
+                        <div class="letter">
+                            <div class="letter-content">
+                                <div class="letter-header">
+                                    <div class="letter-title">To the lovely wanderer reading this now~ ✨</div>
+                                    <div><i class="fas fa-star" style="color: #ff7eb3;"></i></div>
+                                </div>
+                                <div class="letter-body">
+
+                                    <p>So blooms the Sakura, fair and brief, <br> A testament beyond belief. <br> First
+                                        Herrscher? Last? The titles fade, <br> Leaving the promise that she made: <br>
+                                        To fight for beauty, fiercely, true, <br> For all the dreamers, old and new.
+                                        <br> Though petals fall on silent stone, <br> Elysia’s love, the cornerstone,
+                                        <br> Endures – the symphony she gave, <br> The echo past the lonely grave, <br>
+                                        A pink-haired ghost in starlit skies, <br> Where hope, like moonlight, never
+                                        dies.
+                                    </p>
+
+                                    <p class="letter-signature">Forever your Ellie,<br>Elysia ❋</p>
+                                    <p style="font-size:0.8em; text-align:right; margin-top:-3px">P.S. Roisie - Check
+                                        your left pocket. I slipped something there before the final battle. Stop crying
+                                        already, silly~ ♡</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="envelope-seal">
+                            <i class="fas fa-feather-alt" alt="Seal Symbol" class="seal-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
